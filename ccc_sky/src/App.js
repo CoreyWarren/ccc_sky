@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './css/styles.css';
-import happyPhoto from './assets/happy-photo.jpeg';
+import happyPhoto from './assets/happyPhoto1.jpeg';
+import happyPhoto2 from './assets/happyPhoto2.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -28,10 +29,10 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                <a className="nav-link active" aria-current="page" href="#hero">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">About</a>
+                <a className="nav-link" href="#about">About</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/contact">Contact</a>
@@ -72,7 +73,7 @@ function App() {
       </header>
 
 {/* Hero Section */}
-<section className="py-5 bg-light">
+<section className="py-5 bg-light" id="hero">
   <div className="container px-5 my-5">
     <div
       className="position-relative overflow-hidden rounded-3"
@@ -93,6 +94,86 @@ function App() {
   </div>
 </section>
 
+{/* About/Mission Statement Section:
+The mission of Cloud Care Counseling is to empower individuals
+and communities to combat substance use disorder by delivering
+compassionate, evidence-based services tailored to the 
+unique needs of each client. Our purpose is to align our
+care with the principles of harm reduction, trauma-informed
+support, and holistic recovery.
+
+We are committed to providing focused attention to addiction
+through personalized one-on-one counseling, group counseling,
+and Medication-Assisted Treatment (MAT) services. By
+combining therapeutic support with evidence-based medication
+options, we address both the physical and emotional aspects
+of recovery.
+
+Additionally, we prioritize equipping staff and clients with
+critical education and resources, including overdose
+prevention tools, access to life-saving interventions like
+naloxone, and connections to NA/AA meetings. We also foster
+peer-to-peer mentorship by introducing clients to individuals
+who have successfully overcome addiction.
+
+Through these comprehensive services, Cloud Care Counseling
+strives to create a safe, supportive, and inclusive
+environment where individuals can achieve long-term recovery,
+regain their independence, and lead fulfilling lives.
+
+The purpose of Cloud Care Counseling is to provide services
+that seamlessly align with the mission and operations of 
+your transitional homes by supporting those in need through
+evidence-based, compassionate care. Our goal is to become
+an extension of your efforts, offering added resources
+and support that not only enhance the services you
+already provide but also create a potential additional 
+revenue stream.
+
+By addressing substance use disorder through counseling,
+Medication-Assisted Treatment (MAT), overdose prevention
+resources, and peer support, we aim to strengthen your
+impact within the community while highlighting your
+organization’s commitment to making a meaningful difference.
+Together, we can build a stronger, healthier community 
+that uplifts and empowers individuals on their path to 
+recovery.
+*/}
+<section className="py-5" id="about">
+  <div className="container px-5 my-5">
+    <div className="row gx-5 align-items-center">
+      <div className="col-lg-6">
+        <h2 className="fw-bolder">About Us</h2>
+        <p className="lead mb-4">
+          The mission of Cloud Care Counseling is to empower individuals and communities to combat substance use disorder by delivering compassionate, evidence-based services tailored to the unique needs of each client. Our purpose is to align our care with the principles of harm reduction, trauma-informed support, and holistic recovery.
+        </p>
+        <p className="lead mb-4">
+          We are committed to providing focused attention to addiction through personalized one-on-one counseling, group counseling, and Medication-Assisted Treatment (MAT) services. By combining therapeutic support with evidence-based medication options, we address both the physical and emotional aspects of recovery.
+        </p>
+        <p className="lead mb-4">
+          Additionally, we prioritize equipping staff and clients with critical education and resources, including overdose prevention tools, access to life-saving interventions like naloxone, and connections to NA/AA meetings. We also foster peer-to-peer mentorship by introducing clients to individuals who have successfully overcome addiction.
+        </p>
+        <p className="lead mb-4">
+          Through these comprehensive services, Cloud Care Counseling strives to create a safe, supportive, and inclusive environment where individuals can achieve long-term recovery, regain their independence, and lead fulfilling lives.
+        </p>
+      </div>
+      <div className="col-lg-6">
+        <div
+          className="position-relative overflow-hidden rounded-3"
+          style={{
+            backgroundImage: `url(${happyPhoto2})`, // Dynamically resolved
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: "400px",
+          }}
+        ></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
 
 {/* Features section */}
 <section className="py-5 border-bottom" id="features">
@@ -110,14 +191,14 @@ function App() {
         {
           icon: (<i className="bi bi-prescription" style={{ fontSize: "28px", color: "white" }}></i>),
           title: "Medication-Assisted Treatment (MAT) Services",
-          description: "Professional advice to elevate your business and reach new heights.",
+          description: "Comprehensive care that addresses both the physical and emotional aspects of recovery.",
           linkText: "Get Started",
           link: "#!"
         },
         {
           icon: (<i className="bi bi-journal" style={{ fontSize: "28px", color: "white" }}></i>),
           title: "Education Services",
-          description: "Custom solutions designed to meet your technical and strategic goals.",
+          description: "Resources and tools to help you stay informed and make better decisions.",
           linkText: "Explore Now",
           link: "#!"
         }
