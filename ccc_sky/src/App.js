@@ -1,6 +1,11 @@
 import logo from './logo.svg';
 import './css/styles.css';
 import happyPhoto from './assets/happy-photo.jpeg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
+
 
 function App() {
   return (
@@ -47,18 +52,7 @@ function App() {
                   Cloud Care Counseling
                 </h1>
                 <h1 className="mb-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="64"
-                  height="64"
-                  fill="white"
-                  className="bi bi-clipboard"
-                  viewBox="0 0 16 16"
-                  >
-                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z" />
-                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z" />
-                  </svg>
-
+                <i className="bi bi-clipboard" style={{ fontSize: "64px", color: "white" }}></i>
                 </h1>
                 <h1 className="display-6 fw-bolder text-white mb-2">
                   Rebuilding Lives. <br></br> Restoring Hope.
@@ -107,57 +101,21 @@ function App() {
       {/* Feature Cards */}
       {[
         {
-          icon: (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="currentColor"
-              className="bi bi-clipboard"
-              viewBox="0 0 16 16"
-            >
-              <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z" />
-              <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z" />
-            </svg>
-          ),
+          icon: (<i className="bi bi-clipboard" style={{ fontSize: "28px", color: "white" }}></i>),
           title: "Counseling Services",
           description: "Tailored support to help you navigate life's challenges and achieve clarity.",
           linkText: "Learn More",
           link: "#!"
         },
         {
-          icon: (
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              width="24" 
-              height="24" 
-              fill="currentColor" 
-              class="bi bi-prescription" 
-              viewBox="0 0 16 16"
-            >
-              <path d="M5.5 6a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 1 0V9h.293l2 2-1.147 1.146a.5.5 0 0 0 .708.708L9 11.707l1.146 1.147a.5.5 0 0 0 .708-.708L9.707 11l1.147-1.146a.5.5 0 0 0-.708-.708L9 10.293 7.695 8.987A1.5 1.5 0 0 0 7.5 6zM6 7h1.5a.5.5 0 0 1 0 1H6z"/>
-              <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
-          </svg>
-        ),
+          icon: (<i className="bi bi-prescription" style={{ fontSize: "28px", color: "white" }}></i>),
           title: "Medication-Assisted Treatment (MAT) Services",
           description: "Professional advice to elevate your business and reach new heights.",
           linkText: "Get Started",
           link: "#!"
         },
         {
-          icon: (
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              width="24" 
-              height="24" 
-              fill="currentColor" 
-              class="bi bi-journal" 
-              viewBox="0 0 16 16"
-            >
-              <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
-              <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
-        </svg>
-          ),
+          icon: (<i className="bi bi-journal" style={{ fontSize: "28px", color: "white" }}></i>),
           title: "Education Services",
           description: "Custom solutions designed to meet your technical and strategic goals.",
           linkText: "Explore Now",
