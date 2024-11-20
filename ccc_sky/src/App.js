@@ -35,7 +35,7 @@ function App() {
                 <a className="nav-link" href="#about">About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contact">Contact</a>
+                <a className="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -185,22 +185,16 @@ recovery.
           icon: (<i className="bi bi-clipboard" style={{ fontSize: "28px", color: "white" }}></i>),
           title: "Counseling Services",
           description: "Tailored support to help you navigate life's challenges and achieve clarity.",
-          linkText: "Learn More",
-          link: "#!"
         },
         {
           icon: (<i className="bi bi-prescription" style={{ fontSize: "28px", color: "white" }}></i>),
           title: "Medication-Assisted Treatment (MAT) Services",
           description: "Comprehensive care that addresses both the physical and emotional aspects of recovery.",
-          linkText: "Get Started",
-          link: "#!"
         },
         {
           icon: (<i className="bi bi-journal" style={{ fontSize: "28px", color: "white" }}></i>),
           title: "Education Services",
           description: "Resources and tools to help you stay informed and make better decisions.",
-          linkText: "Explore Now",
-          link: "#!"
         }
       ].map((card, index) => (
         <div key={index} className="col-lg-4 mb-5 mb-lg-0">
@@ -209,9 +203,6 @@ recovery.
           </div>
           <h2 className="h4 fw-bolder">{card.title}</h2>
           <p>{card.description}</p>
-          <a className="text-decoration-none" href={card.link}>
-            {card.linkText} <i className="bi bi-arrow-right"></i>
-          </a>
         </div>
       ))}
     </div>
