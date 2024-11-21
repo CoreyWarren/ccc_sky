@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './css/styles.css';
 import happyPhoto from './assets/happyPhoto1.jpeg';
 import happyPhoto2 from './assets/happyPhoto2.jpg';
+import logo from './assets/frontpagelogo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -52,9 +52,7 @@ function App() {
                 <h1 className="display-3 fw-bolder text-white mb-3">
                   Cloud Care Counseling
                 </h1>
-                <h1 className="mb-3">
-                <i className="bi bi-clipboard" style={{ fontSize: "64px", color: "white" }}></i>
-                </h1>
+                <img className="ccclogo" src={logo} alt="logo"></img>
                 <h1 className="display-6 fw-bolder text-white mb-2">
                   Rebuilding Lives. <br></br> Restoring Hope.
                 </h1>
@@ -148,7 +146,7 @@ recovery.
           The mission of Cloud Care Counseling is to empower individuals and communities to combat substance use disorder by delivering compassionate, evidence-based services tailored to the unique needs of each client. Our purpose is to align our care with the principles of harm reduction, trauma-informed support, and holistic recovery.
         </p>
         <p className="lead mb-4">
-          We are committed to providing focused attention to addiction through personalized one-on-one counseling, group counseling, and Medication-Assisted Treatment (MAT) services. By combining therapeutic support with evidence-based medication options, we address both the physical and emotional aspects of recovery.
+          We are committed to providing focused attention to addiction through personalized one-on-one counseling and group counseling services. Through therapeutic support, we address the overarching emotional aspects of recovery.
         </p>
         <p className="lead mb-4">
           Additionally, we prioritize equipping staff and clients with critical education and resources, including overdose prevention tools, access to life-saving interventions like naloxone, and connections to NA/AA meetings. We also foster peer-to-peer mentorship by introducing clients to individuals who have successfully overcome addiction.

@@ -10833,3 +10833,8 @@ textarea.form-control-lg {
   font-size: 2rem;
 }
 
+img, .ccclogo{
+  width: 12rem;
+  height: auto;
+  margin: 1rem;
+}
