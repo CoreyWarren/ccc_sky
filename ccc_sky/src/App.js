@@ -1,4 +1,3 @@
-import './css/styles.css';
 import happyPhoto from './assets/happyPhoto1.jpeg';
 import happyPhoto2 from './assets/happyPhoto2.jpg';
 import logo from './assets/frontpagelogo.png';
@@ -6,6 +5,7 @@ import cloud_hd_bg from './assets/clouds_hd_bg.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import './css/styles.css';
 
 
 
