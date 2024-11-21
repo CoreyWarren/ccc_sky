@@ -2,6 +2,7 @@ import './css/styles.css';
 import happyPhoto from './assets/happyPhoto1.jpeg';
 import happyPhoto2 from './assets/happyPhoto2.jpg';
 import logo from './assets/frontpagelogo.png';
+import cloud_hd_bg from './assets/clouds_hd_bg.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -42,33 +43,38 @@ function App() {
         </div>
       </nav>
 
-      {/* Header */}
-      <header className="bg-dark py-5">
-        <div className="container px-5">
-          <div className="row gx-5 justify-content-center">
-            <div className="col-lg-6">
-              <div className="text-center my-5">
-                
-                <h1 className="display-3 fw-bolder text-white mb-3">
-                  Cloud Care Counseling
-                </h1>
-                <img className="ccclogo" src={logo} alt="logo"></img>
-                <h1 className="display-6 fw-bolder text-white mb-2">
-                  Rebuilding Lives. <br></br> Restoring Hope.
-                </h1>
-                <p className="lead text-white-50 mb-4">
-                  Empowering inviduals to combat substance use. <br></br>
-                  Let's take the first step together!
-                </p>
-                <div className="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                  <a className="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Learn More</a>
-                  <a className="btn btn-outline-light btn-lg px-4" href="#contact">Contact</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+{/* Header Section */}
+<section
+  className="py-5"
+  style={{
+    backgroundImage: `url(${cloud_hd_bg})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    position: "relative",
+  }}
+  >
+    <div
+      className="container px-5 text-center"
+      style={{
+        backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent black
+        borderRadius: "10px", // Rounded edges for modern look
+        padding: "40px",
+        color: "white",
+      }}
+    >
+      <h1 className="display-3 fw-bolder mb-3">Cloud Care Counseling</h1>
+      <img className="ccclogo mb-4" src={logo} alt="logo" style={{ maxWidth: "100px" }} />
+      <h2 className="display-6 fw-bolder mb-2">Rebuilding Lives. <br /> Restoring Hope.</h2>
+      <p className="lead mb-4">
+        Empowering individuals to combat substance use. <br />
+        Let's take the first step together!
+      </p>
+      <div className="d-grid gap-3 d-sm-flex justify-content-sm-center">
+        <a className="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Learn More</a>
+        <a className="btn btn-outline-light btn-lg px-4" href="#contact">Contact</a>
+      </div>
+    </div>
+  </section>
 
 {/* Hero Section */}
 <section className="py-5 bg-light" id="hero">

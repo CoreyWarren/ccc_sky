@@ -10833,8 +10833,9 @@ textarea.form-control-lg {
   font-size: 2rem;
 }
 
+/* Cloud logo */ 
 img, .ccclogo{
-  width: 12rem;
+  width: 16rem;
   height: auto;
-  margin: 1rem;
+  margin: 0rem;
 }
