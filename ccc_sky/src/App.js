@@ -54,7 +54,7 @@ function App() {
       Let's take the first step together!
     </p>
     <div className="d-grid gap-3 d-sm-flex justify-content-sm-center">
-      <a className="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Learn More</a>
+      <a className="btn btn-primary btn-lg px-4 me-sm-3" href="#learn_more">Learn More</a>
       <a className="btn btn-outline-light btn-lg px-4" href="#contact">Contact</a>
     </div>
   </div>
@@ -162,41 +162,227 @@ recovery.
 
 </section>
 
+{/* Counseling Services Section */}
+<section id="learn_more" className="py-5 bg-light">
+  <div className="container">
+    <h2 className="text-center fw-bold mb-4">Counseling Services</h2>
+    <p className="text-center mb-5">
+      At Cloud Care Counseling, we offer compassionate support tailored to your unique needs.
+    </p>
 
-
-{/* Features section */}
-<section className="py-5 border-bottom" id="features">
-  <div className="container px-5 my-5">
-    <div className="row gx-5">
-      {/* Feature Cards */}
+    <div className="row g-4">
       {[
         {
-          icon: (<i className="bi bi-clipboard" style={{ fontSize: "28px", color: "white" }}></i>),
-          title: "Counseling Services",
-          description: "Tailored support to help you navigate life's challenges and achieve clarity.",
+          title: "Substance Abuse Counseling",
+          icon: "bi bi-heart",
+          content: "Guiding individuals toward recovery with tools for lasting change.",
         },
         {
-          icon: (<i className="bi bi-prescription" style={{ fontSize: "28px", color: "white" }}></i>),
-          title: "Medication-Assisted Treatment (MAT) Services",
-          description: "Comprehensive care that addresses both the physical and emotional aspects of recovery.",
+          title: "Individual Therapy",
+          icon: "bi bi-person",
+          content: "Focusing on personal growth, emotional healing, and overcoming obstacles.",
         },
         {
-          icon: (<i className="bi bi-journal" style={{ fontSize: "28px", color: "white" }}></i>),
-          title: "Education Services",
-          description: "Resources and tools to help you stay informed and make better decisions.",
-        }
-      ].map((card, index) => (
-        <div key={index} className="col-lg-4 mb-5 mb-lg-0">
-          <div className="feature bg-primary bg-gradient text-white rounded-3 mb-3">
-            {card.icon}
+          title: "Couples & Family Therapy",
+          icon: "bi bi-people",
+          content: "Strengthening relationships and fostering healthy communication.",
+        },
+        {
+          title: "Group Therapy",
+          icon: "bi bi-chat-dots",
+          content: "Providing a supportive environment to share experiences and connect.",
+        },
+      ].map((service, index) => (
+        <div className="col-md-6 col-lg-4" key={index}>
+          <div className="card shadow-sm border-0">
+            <div className="card-body">
+              <div className="d-flex align-items-center mb-3">
+                <i className={`${service.icon} text-primary fs-3 me-3`}></i>
+                <h5 className="card-title mb-0 fw-bold">{service.title}</h5>
+              </div>
+              <p className="card-text">{service.content}</p>
+            </div>
           </div>
-          <h2 className="h4 fw-bolder">{card.title}</h2>
-          <p>{card.description}</p>
         </div>
       ))}
     </div>
   </div>
 </section>
+
+
+
+{/* Education Services Section */}
+<section className="py-5">
+  <div className="container">
+    <h2 className="text-center fw-bold mb-4">Education Services</h2>
+    <div className="row g-4">
+      {[
+        {
+          title: "Staff Training",
+          icon: "bi bi-people",
+          content: "Workshops on effective communication, crisis intervention, and best practices for recovery support.",
+        },
+        {
+          title: "Crisis Prevention",
+          icon: "bi bi-exclamation-triangle",
+          content: "Training to identify early warning signs of crises and ensure safety.",
+        },
+        {
+          title: "Overdose Prevention",
+          icon: "bi bi-droplet-fill",
+          content: "Education on recognizing overdose symptoms and administering life-saving interventions.",
+        },
+      ].map((service, index) => (
+        <div className="col-md-4" key={index}>
+          <div className="card h-100 text-center">
+            <div className="card-body">
+              <i className={`${service.icon} text-primary mb-3`} style={{ fontSize: "2rem" }}></i>
+              <h5 className="card-title fw-bold">{service.title}</h5>
+              <p className="card-text">{service.content}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+{/* Treatments & Meetings Section */}
+<section className="py-5">
+  <div className="container">
+    <h2 className="text-center fw-bold mb-4">Treatments & Meetings</h2>
+    <p className="text-center mb-5">
+      Explore evidence-based treatments and supportive meetings designed for lasting success.
+    </p>
+
+    <div className="row g-4">
+      {[
+        {
+          title: "Medication Education",
+          icon: "bi bi-capsule",
+          content: "Understand recovery medications, their benefits, and proper usage.",
+        },
+        {
+          title: "NA/AA Meetings",
+          icon: "bi bi-people",
+          content: "Join peer-led support groups for encouragement and connection.",
+        },
+        {
+          title: "SMART Recovery Meetings",
+          icon: "bi bi-lightbulb",
+          content: "Focus on self-management, coping strategies, and long-term success.",
+        },
+        {
+          title: "Multilingual Meetings",
+          icon: "bi bi-translate",
+          content: "Access support in your preferred language for inclusivity and comfort.",
+        },
+        {
+          title: "Overdose Prevention",
+          icon: "bi bi-droplet-fill",
+          content: "Recognize symptoms and intervene effectively to save lives.",
+        },
+      ].map((treatment, index) => (
+        <div className="col-md-6 col-lg-4" key={index}>
+          <div className="card border-1 rounded">
+            <div className="card-body">
+              <div className="text-center mb-3">
+                <i className={`${treatment.icon} text-secondary fs-2`}></i>
+              </div>
+              <h5 className="card-title text-center fw-bold">{treatment.title}</h5>
+              <p className="card-text text-center">{treatment.content}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+{/* Contact Us Section */}
+<section id="contact" className="py-5 bg-light">
+  <div className="container">
+    <h2 className="text-center fw-bold mb-4">Contact Us</h2>
+    <p className="text-center mb-5">
+      Have questions or need support? Fill out the form below, and we’ll get back to you!
+    </p>
+
+    <div className="row justify-content-center">
+      <div className="col-lg-6">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            const name = e.target.name.value;
+            const email = e.target.email.value;
+            const message = e.target.message.value;
+
+            // Build a properly formatted mailto link
+            const mailtoLink = `mailto:info@cloudcarecounseling.com?subject=New%20Inquiry%20from%20${encodeURIComponent(
+              name
+            )}&body=${encodeURIComponent(
+              `Name:\n${name}\n\nEmail:\n${email}\n\nMessage:\n${message}`
+            )}`;
+
+            // Open the user's email client
+            window.location.href = mailtoLink;
+          }}
+          className="p-4 border rounded shadow-sm bg-white"
+        >
+          <div className="mb-3">
+            <label htmlFor="name" className="form-label">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              className="form-control"
+              placeholder="Your Full Name"
+              required
+            />
+          </div>
+
+          <div className="mb-3">
+            <label htmlFor="email" className="form-label">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              className="form-control"
+              placeholder="Your Email Address"
+              required
+            />
+          </div>
+
+          <div className="mb-3">
+            <label htmlFor="message" className="form-label">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              className="form-control"
+              rows="4"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+
+          <div className="text-center">
+            <button type="submit" className="btn btn-primary px-4">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
 
