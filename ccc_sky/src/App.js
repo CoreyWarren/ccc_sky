@@ -8,7 +8,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './css/styles.css';
 
 
-
 function App() {
   return (
     <>
@@ -227,11 +226,6 @@ recovery.
           icon: "bi bi-exclamation-triangle",
           content: "Training to identify early warning signs of crises and ensure safety.",
         },
-        {
-          title: "Overdose Prevention",
-          icon: "bi bi-droplet-fill",
-          content: "Education on recognizing overdose symptoms and administering life-saving interventions.",
-        },
       ].map((service, index) => (
         <div className="col-md-4" key={index}>
           <div className="card h-100 text-center">
@@ -381,9 +375,6 @@ recovery.
     </div>
   </div>
 </section>
-
-
-
 
 
 

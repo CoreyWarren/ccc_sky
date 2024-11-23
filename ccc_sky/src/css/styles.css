@@ -3786,7 +3786,7 @@ textarea.form-control-lg {
 
 @media (max-width: 575.98px) {
   .navbar-brand {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -10899,5 +10899,37 @@ img, .ccclogo{
     padding: 1rem;
     margin: 1rem; /* Minimal margin for very small screens */
     border-radius: 5px;
+  }
+}
+
+
+/* 3d stuff */
+
+/* Three.js Cube */
+div[ref] {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  div[ref] {
+    height: 300px;
+  }
+}
+
+/* Cube styling */
+.cube-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .cube-container {
+    max-width: 300px;
+    height: auto;
   }
 }
