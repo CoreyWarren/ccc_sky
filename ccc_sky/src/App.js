@@ -30,7 +30,7 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#hero">Home</a>
+                <a className="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#about">About</a>
@@ -44,7 +44,7 @@ function App() {
       </nav>
 
 {/* Header Section */}
-<section className="header-section">
+<section className="header-section" id="home">
   <div className="header-box">
     <h1 className="display-3 fw-bolder mb-2">Cloud Care Counseling</h1>
     <img className="ccclogo mb-0" src={logo} alt="logo" />
