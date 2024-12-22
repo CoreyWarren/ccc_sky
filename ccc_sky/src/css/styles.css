@@ -3786,7 +3786,7 @@ textarea.form-control-lg {
 
 @media (max-width: 575.98px) {
   .navbar-brand {
-    font-size: 1.25rem;
+    font-size: 1.25.rem;
   }
 }
 
@@ -10931,5 +10931,59 @@ h4 {
   .cube-container {
     max-width: 300px;
     height: auto;
+  }
+}
+
+/* Floating Tab Component */
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1040; /* Below the floating tab */
+}
+
+/* Floating Tab */
+.floating-tab {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+  z-index: 1050; /* Above the overlay */
+  animation: fadeIn 0.3s ease-in-out;
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .floating-tab {
+    max-width: 70%;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .floating-tab {
+    min-width: 80%;
+    max-width: 95%;
+    max-height: 50%;
+    padding: 1rem;
   }
 }

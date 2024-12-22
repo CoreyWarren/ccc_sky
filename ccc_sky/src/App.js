@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './css/styles.css';
+import InteractiveTabs from './components/tabPopUp';
 
 
 function App() {
@@ -161,137 +162,8 @@ recovery.
 
 </section>
 
-{/* Counseling Services Section */}
-<section id="learn_more" className="py-5 bg-light">
-  <div className="container">
-    <h2 className="text-center fw-bold mb-4">Counseling Services</h2>
-    <p className="text-center mb-5">
-      At Cloud Care Counseling, we offer compassionate support tailored to your unique needs.
-    </p>
-
-    <div className="row g-4">
-      {[
-        {
-          title: "Substance Abuse Counseling",
-          icon: "bi bi-heart",
-          content: "Guiding individuals toward recovery with tools for lasting change.",
-        },
-        {
-          title: "Individual Therapy",
-          icon: "bi bi-person",
-          content: "Focusing on personal growth, emotional healing, and overcoming obstacles.",
-        },
-        {
-          title: "Couples & Family Therapy",
-          icon: "bi bi-people",
-          content: "Strengthening relationships and fostering healthy communication.",
-        },
-        {
-          title: "Group Therapy",
-          icon: "bi bi-chat-dots",
-          content: "Providing a supportive environment to share experiences and connect.",
-        },
-      ].map((service, index) => (
-        <div className="col-md-6 col-lg-4" key={index}>
-          <div className="card shadow-sm border-0">
-            <div className="card-body">
-              <div className="d-flex align-items-center mb-3">
-                <i className={`${service.icon} text-primary fs-3 me-3`}></i>
-                <h5 className="card-title mb-0 fw-bold">{service.title}</h5>
-              </div>
-              <p className="card-text">{service.content}</p>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-
-
-{/* Education Services Section */}
-<section className="py-5">
-  <div className="container">
-    <h2 className="text-center fw-bold mb-4">Education Services</h2>
-    <div className="row g-4">
-      {[
-        {
-          title: "Staff Training",
-          icon: "bi bi-people",
-          content: "Workshops on effective communication, crisis intervention, and best practices for recovery support.",
-        },
-        {
-          title: "Crisis Prevention",
-          icon: "bi bi-exclamation-triangle",
-          content: "Training to identify early warning signs of crises and ensure safety.",
-        },
-      ].map((service, index) => (
-        <div className="col-md-4" key={index}>
-          <div className="card h-100 text-center">
-            <div className="card-body">
-              <i className={`${service.icon} text-primary mb-3`} style={{ fontSize: "2rem" }}></i>
-              <h5 className="card-title fw-bold">{service.title}</h5>
-              <p className="card-text">{service.content}</p>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-{/* Treatments & Meetings Section */}
-<section className="py-5">
-  <div className="container">
-    <h2 className="text-center fw-bold mb-4">Treatments & Meetings</h2>
-    <p className="text-center mb-5">
-      Explore evidence-based treatments and supportive meetings designed for lasting success.
-    </p>
-
-    <div className="row g-4">
-      {[
-        {
-          title: "Medication Education",
-          icon: "bi bi-capsule",
-          content: "Understand recovery medications, their benefits, and proper usage.",
-        },
-        {
-          title: "NA/AA Meetings",
-          icon: "bi bi-people",
-          content: "Join peer-led support groups for encouragement and connection.",
-        },
-        {
-          title: "SMART Recovery Meetings",
-          icon: "bi bi-lightbulb",
-          content: "Focus on self-management, coping strategies, and long-term success.",
-        },
-        {
-          title: "Multilingual Meetings",
-          icon: "bi bi-translate",
-          content: "Access support in your preferred language for inclusivity and comfort.",
-        },
-        {
-          title: "Overdose Prevention",
-          icon: "bi bi-droplet-fill",
-          content: "Recognize symptoms and intervene effectively to save lives.",
-        },
-      ].map((treatment, index) => (
-        <div className="col-md-6 col-lg-4" key={index}>
-          <div className="card border-1 rounded">
-            <div className="card-body">
-              <div className="text-center mb-3">
-                <i className={`${treatment.icon} text-secondary fs-2`}></i>
-              </div>
-              <h5 className="card-title text-center fw-bold">{treatment.title}</h5>
-              <p className="card-text text-center">{treatment.content}</p>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+{/* Interactive Tabs Section */}
+<InteractiveTabs />
 
 
 {/* Contact Us Section */}
