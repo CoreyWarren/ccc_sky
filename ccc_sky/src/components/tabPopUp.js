@@ -192,6 +192,7 @@ const InteractiveTabs = () => {
           style={{
             backgroundColor: sectionIndex % 2 === 0 ? "#ffffff" : "#f8f9fa", // Alternating background colors
           }}
+          id="learn_more"
         >
           <div className="container">
             <h2 className="text-center fw-bold mb-4">{section.section}</h2>
