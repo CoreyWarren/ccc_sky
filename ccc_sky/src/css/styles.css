@@ -10941,8 +10941,8 @@ h4 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 150vw;
+  height: 150vh;
   background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
   z-index: 1040; /* Below the floating tab */
 }
@@ -10978,6 +10978,7 @@ h4 {
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
   .floating-tab {
+    min-width: 70vw; /* Minimum width for better readability */
     max-width: 95vw; /* Reduce width slightly for smaller devices */
     padding: 1rem; /* Reduce padding for smaller screens */
     top: 60%; /* Adjust vertical positioning for better visibility */
@@ -10987,6 +10988,7 @@ h4 {
 
 @media (max-width: 576px) {
   .floating-tab {
+    min-width: 80vw; /* Minimum width for better readability */
     max-width: 100vw; /* Use full width for very small screens */
     padding: 1rem; /* Keep compact padding */
     border-radius: 0; /* Remove rounded edges for a cleaner fit */
