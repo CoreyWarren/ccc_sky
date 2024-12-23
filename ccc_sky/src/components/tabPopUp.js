@@ -140,6 +140,8 @@ const InteractiveTabs = () => {
               <li>Building motivation for change.</li>
               <li>Developing effective coping strategies.</li>
               <li>Creating actionable plans for long-term success.</li>
+              <br></br>
+              <a href="https://www.smartrecovery.org/meeting">Learn more about SMART Recovery.</a>
             </ul>
           `,
         },
