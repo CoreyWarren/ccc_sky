@@ -10954,8 +10954,8 @@ h4 {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 150vw;
-  min-height: 150vh;
+  min-width: 100vw;
+  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
   z-index: 1040; /* Below the floating tab */
 }
@@ -10976,6 +10976,7 @@ h4 {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   animation: fadeIn 0.3s ease-in-out;
 }
+
 /* Fade-In Animation */
 @keyframes fadeIn {
   from {
@@ -10986,6 +10987,26 @@ h4 {
     opacity: 1;
     transform: translate(-50%, -50%);
   }
+}
+
+/* Clickable Boxes */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer; /* Indicate interactivity */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Elevation effect */
+  background-color: #e9f5e9; /* Subtle green background for hover */
+}
+
+.card-body {
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.card:hover .card-body {
+  color: #198754; /* Bootstrap primary green */
 }
 
 /* Mobile-specific adjustments */
@@ -11011,7 +11032,7 @@ h4 {
     overflow: hidden;
   }
 
-  .navbar .container.px-5 a{
+  .navbar .container.px-5 a {
     font-size: 1.5rem!important;
   }
 
@@ -11019,6 +11040,9 @@ h4 {
     font-size: 1.25rem!important;
   }
 
+  .card:hover {
+    transform: scale(1.03); /* Slightly smaller hover effect for smaller screens */
+  }
 }
 
 @media (max-width: 576px) {
@@ -11040,6 +11064,7 @@ h4 {
     width: 100vw;
     height: 100vh; /* Ensure overlay always fills the screen */
   }
+
   .navbar .container.px-5 {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
@@ -11049,11 +11074,15 @@ h4 {
     overflow: hidden;
   }
 
-  .navbar .container.px-5 a{
+  .navbar .container.px-5 a {
     font-size: 1.5rem!important;
   }
 
   #navbarSupportedContent > ul > li > a {
     font-size: 1.25rem!important;
+  }
+
+  .card:hover {
+    transform: scale(1.02); /* Slightly smaller hover effect for very small screens */
   }
 }
